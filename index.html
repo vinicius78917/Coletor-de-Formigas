@@ -1,11 +1,89 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coletor de formigas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#173b16">
+  <title>Formigueiro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<main class="jogo" id="jogo">
+
+  <!-- ===== Página 1: Campo (onde as formigas aparecem) ===== -->
+  <section class="cena cena-campo ativa" id="cenaCampo">
+    <div class="campo"></div>
+    <div class="grama-topo"></div>
+    <img src="Imagems/Group 19.png" class="bandeira" alt="">
+
+    <header class="painel-topo">
+      <div class="caixa-placar">
+        <div class="placar">
+          <span class="formiga-mini">🐜</span><span class="dois-pontos">:</span><span class="valor-placar">0</span>
+        </div>
+        <div class="taxa">+<span class="valor-taxa">0</span> 🐜 p/s</div>
+      </div>
+      <nav class="navegacao" data-navegacao></nav>
+    </header>
+
+    <section class="area-jogo" id="areaJogo" aria-label="Campo de jogo"></section>
+  </section>
+
+  <!-- ===== Página 2: Loja ===== -->
+  <section class="cena cena-loja" id="cenaLoja" aria-label="Loja">
+    <header class="painel-topo-loja">
+      <div class="caixa-placar">
+        <div class="placar">
+          <span class="formiga-mini">🐜</span><span class="dois-pontos">:</span><span class="valor-placar">0</span>
+        </div>
+        <div class="taxa">+<span class="valor-taxa">0</span> 🐜 p/s</div>
+      </div>
+      <nav class="navegacao" data-navegacao></nav>
+    </header>
+
+    <div class="titulo-loja"><span></span><b>Loja</b><span></span></div>
+    <div class="lista-loja" id="listaLoja"></div>
+    <div class="grama-topo-loja"></div>
+    <div class="grama-base-loja"></div>
+  </section>
+
+  <!-- ===== Página 3: Formigueiro (nível e conquistas) ===== -->
+  <section class="cena cena-formigueiro" id="cenaFormigueiro" aria-label="Formigueiro">
+    <header class="painel-topo-formigueiro">
+      <div class="caixa-placar">
+        <div class="placar">
+          <span class="formiga-mini">🐜</span><span class="dois-pontos">:</span><span class="valor-placar">0</span>
+        </div>
+        <div class="taxa">+<span class="valor-taxa">0</span> 🐜 p/s</div>
+      </div>
+      <nav class="navegacao" data-navegacao></nav>
+    </header>
+
+    <div class="vista-formigueiro">
+      <div class="faixa-grama"></div>
+      <img class="monte" id="monte" src="Imagems/formigueiro_marrom.svg" alt="Formigueiro">
+    </div>
+
+    <div class="painel-formigueiro">
+      <div class="titulo-painel"><span></span><b>Level</b><span></span></div>
+      <div class="cartao-nivel">
+        <h2 id="nomeNivel">Nível do formigueiro - 1</h2>
+        <div class="titulo-nivel" id="tituloNivel"></div>
+        <button class="botao-dourado" id="botaoMelhorar" type="button">Melhorar</button>
+        <div class="custo-nivel" id="custoNivel"></div>
+        <div class="bonus-nivel" id="bonusNivel"></div>
+      </div>
+
+      <div class="titulo-painel"><span></span><b>Achievements</b><span></span></div>
+      <ul class="lista-conquistas" id="listaConquistas"></ul>
+    </div>
+
+    <div class="grama-topo-formigueiro"></div>
+    <div class="grama-base-formigueiro"></div>
+  </section>
+
+  <div class="aviso" id="aviso"></div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
