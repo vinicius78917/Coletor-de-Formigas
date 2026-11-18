@@ -17,7 +17,7 @@ const cenas = {
 
 // ---------- Configurações (mexa aqui para ajustar o jogo) ----------
 const MAXIMO_FORMIGAS_NA_TELA = 100;
-const INTERVALO_APARICAO_MS   = 100;   // tempo entre uma formiga e outra aparecer no campo
+const INTERVALO_APARICAO_MS   = 50;   // tempo entre uma formiga e outra aparecer no campo
 const INTERVALO_PRODUCAO_MS   = 1800;   // tempo entre cada ganho automático de formigas (era 1000)
 
 
