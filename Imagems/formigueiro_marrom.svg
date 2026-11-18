@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="400" height="400">
+  <!-- Mesmo desenho do ícone do formigueiro (Group 1.png), só que em marrom -->
+  <defs>
+    <linearGradient id="terra" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="40">
+      <stop offset="0"   stop-color="#bd8052"/>
+      <stop offset="0.75" stop-color="#b0724a"/>
+      <stop offset="0.80" stop-color="#a1653f"/>
+      <stop offset="1"   stop-color="#4b2913"/>
+    </linearGradient>
+    <clipPath id="forma">
+      <path id="contorno" d="M15 0 L21 0 C23 3 26 8 28 13 C30 18 34 24 37 29 C38.5 31.5 40 33 40 34.5 C40 36.5 38 37.5 35 38.5 L25 39.5 L5 39.5 C2 38.5 0 36.5 0 34.5 C0 33 1 31.5 2 29.5 C4 25 6 20 7.5 15 C9 10 12 4 15 0 Z"/>
+    </clipPath>
+  </defs>
+  <use href="#contorno" fill="url(#terra)"/>
+  <!-- entrada do formigueiro -->
+  <ellipse cx="18" cy="0.6" rx="3.2" ry="2.2" fill="#3a1d0b" clip-path="url(#forma)"/>
+</svg>
